@@ -27,7 +27,7 @@ Users should be able to:
 
 ## 💻 Demo
 
-🔗 **Live Site URL:** [Add your live site link here](https://your-live-demo-link.com)
+🔗 **Live Site URL:** (https://front-end-mentor-grid.netlify.app/)
 
 ---
 
