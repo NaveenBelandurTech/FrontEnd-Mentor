@@ -12,7 +12,7 @@ Your challenge was to build out this **recipe page** and get it looking as close
 
 Users should be able to:
 - View the optimal layout for the interface depending on their device’s screen size.
-- See hover and focus states for all interactive elements on the page.
+
 
 ---
 
@@ -22,24 +22,12 @@ Users should be able to:
 - **CSS3** – for styling  
 - **Flexbox** – for responsive layout  
 - **Media Queries** – to ensure mobile-first responsiveness  
-- **Google Fonts** – for consistent typography
+- **Google Fonts** – for typography
 
 ---
 
 ## 💻 Demo
 
-🔗 **Live Site URL:** [Add your live site link here](#)  
-💾 **Frontend Mentor Solution Page:** [Add your solution link here](#)  
-
+🔗 **Live Site URL:** [Add your live site link here](https://front-end-mentor-challenges-receipe.netlify.app/)  
 ---
 
-## 🧱 Project Structure
-
-```bash
-/
-├── index.html
-├── style.css
-├── assets/
-│   ├── images/
-│   └── fonts/
-└── README.md
