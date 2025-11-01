@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+.box_container {
+  width: 300px;
+  border-radius: 0.5rem;
+  border: 1px solid #1f1f1f;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+}
+
+.image_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button_container {
+  width: 100%;
+  background-color: #333333;
+  border: 1px solid #333333;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link {
+  
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+
+  text-decoration: none;
+  color: white;
+}
+
+.button_container:hover {
+  background-color: #b7d561;
+  transition: 0.5s;
+}
+
+.button_container:hover .link {
+  color: black;
+  transition: 0.5s;
+}
+
+.heading_title_fnt {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+
+  font-weight: 700;
+}
+
+.para_fnt {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+
+  font-weight: 600;
+  color: #b7d561;
+}
+
+.heading_container___ {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.para_main__ {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+}
+
+
+
+
+.profile___{
+    width: 80px;
+    height: 80px;
+        border-radius: 50%;
+}
+
