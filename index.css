@@ -1,0 +1,156 @@
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #e0f2e7;
+    }
+
+    .form_container {
+      height: 120vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      overflow: hidden;
+    }
+
+    .form__ {
+      width: 60%;
+      background-color: white;
+      border-radius: 0.5rem;
+      padding: 2rem;
+    }
+
+    .form___ {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .input_container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    .input__box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .input__box_inside {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      position: relative;
+    }
+
+    .input_____box___ {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+      top: 2rem;
+      left: 1rem;
+    }
+
+    .para___ {
+      font-family: "Karla", sans-serif;
+      font-size: 0.8rem;
+    }
+
+    .input_box__ {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 0.3rem;
+      border: 1px solid #dde4e3;
+    }
+
+    .radio_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .btn_container {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 0.3rem;
+      background-color: #0a7e69;
+      color: white;
+      border: 0px;
+      cursor: pointer;
+      font-family: "Karla", sans-serif;
+    }
+
+    .btn___container___ {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .heading_fnt {
+      font-family: "Karla", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .label_fnt {
+      font-family: "Karla", sans-serif;
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: #242e2f;
+    }
+
+    .para__fnt__ {
+      font-family: "Karla", sans-serif;
+      font-size: 0.8rem;
+    }
+
+    .validation {
+      font-family: "Karla", sans-serif;
+      color: red;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+
+
+    .input_box_____{
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 0.3rem;
+      border: 1px solid #dde4e3;
+      display: flex;
+      flex-direction: row;
+      gap:0.8rem;
+    }
+
+    @media (max-width: 480px) {
+
+
+    .form_container {
+      overflow: scroll;
+      height: 100%;
+    }
+    
+    .form__ {
+            width: 88%;
+        margin-top: 4rem;
+        padding: -1rem;
+    }
+
+    .input_container{
+      flex-direction:column ;
+    }
+    }

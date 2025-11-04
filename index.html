@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us Form</title>
+  <Link href="./index.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="form_container">
+    <form class="form__" id="contactForm">
+      <h2 class="heading_fnt">Contact Us</h2>
+
+      <div class="form___">
+        <div class="input_container">
+          <div class="input__box">
+            <label class="label_fnt">First Name </label>
+            <input class="input_box__" id="firstName" type="text" />
+            <span class="validation"></span>
+          </div>
+
+          <div class="input__box">
+            <label class="label_fnt">Last Name </label>
+            <input class="input_box__" id="lastName" type="text" />
+            <span class="validation"></span>
+          </div>
+        </div>
+
+        <div class="input__box">
+          <label class="label_fnt">Email Address</label>
+          <input class="input_box__" id="email" type="text" />
+          <span class="validation"></span>
+        </div>
+
+        <div class="input_container">
+          <div class="input__box_inside">
+            <label class="label_fnt">Query Type</label>
+            <div class="input_box_____">
+              <input type="radio" name="query" id="general" />
+              <p class="para___">General Enquiry</p>
+            </div>
+          </div>
+
+          <div class="input__box_inside">
+            <label class="label_fnt">Query Type</label>
+            <div class="input_box_____">
+              <input type="radio"  name="query" id="support" />
+              <p class="para___">Support Request</p>
+            </div>
+          </div>
+        </div>
+        <span class="validation" id="queryError"></span>
+
+        <div class="btn___container___">
+          <div class="input__box">
+            <label class="label_fnt">Message </label>
+            <textarea class="input_box__" id="message" rows="6" cols="8"></textarea>
+            <span class="validation"></span>
+          </div>
+
+          <div class="radio_container">
+            <input type="checkbox" id="consent" />
+            <p class="para__fnt__">I consent to being contacted by team</p>
+          </div>
+          <span class="validation" id="consentError"></span>
+
+          <button class="btn_container" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+    </form>
+
+  </div>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+
+      document.querySelectorAll(".validation").forEach(el => el.textContent = "");
+
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const general = document.getElementById("general").checked;
+      const support = document.getElementById("support").checked;
+      const consent = document.getElementById("consent").checked;
+
+      let isValid = true;
+
+
+      if (firstName === "") {
+        document.getElementById("firstName").nextElementSibling.textContent = "First name is required";
+        isValid = false;
+      }
+
+      if (lastName === "") {
+        document.getElementById("lastName").nextElementSibling.textContent = "Last name is required";
+        isValid = false;
+      }
+
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (email === "") {
+        document.getElementById("email").nextElementSibling.textContent = "Email is required";
+        isValid = false;
+      } else if (!emailPattern.test(email)) {
+        document.getElementById("email").nextElementSibling.textContent = "Enter a valid email address";
+        isValid = false;
+      }
+
+
+      if (message === "") {
+        document.getElementById("message").nextElementSibling.textContent = "Message is required";
+        isValid = false;
+      }
+
+
+      if (!general && !support) {
+        document.getElementById("queryError").textContent = "Please select a query type";
+        isValid = false;
+      }
+
+
+      if (!consent) {
+        document.getElementById("consentError").textContent = "You must consent before submitting";
+        isValid = false;
+      }
+
+
+      if (isValid) {
+        console.log({
+          firstName,
+          lastName,
+          email,
+          message,
+          queryType: general ? "General Enquiry" : "Support Request",
+          consent
+        });
+
+        alert("Form submitted successfully!");
+        document.getElementById("contactForm").reset();
+      }
+    });
+  </script>
+</body>
+</html>
+
