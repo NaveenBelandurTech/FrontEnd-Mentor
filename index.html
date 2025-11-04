@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body class="container">
+    <div class="box_container">
+      <div class="box">
+        <p class="para_fnt">Advice <span id="para"></span></p>
+
+        <h2 class="fnt" id="fnt">""</h2>
+
+        <div>
+          <image
+            class="image__"
+            src="./images/pattern-divider-desktop.svg"
+            alt="line_design"
+          />
+        </div>
+      </div>
+      <div class="dice_container" onclick="generate()">
+        <image
+          class="dice_image__"
+          src="./images/icon-dice.svg"
+          rel="style_dice"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    async function generate() {
+      const response = await fetch("https://api.adviceslip.com/advice");
+      const data = await response.json();
+      document.getElementById("para").innerHTML = `#${data.slip.id}`;
+      document.getElementById("fnt").innerHTML = `"${data.slip.advice}"`;
+    }
+  </script>
+</html>
