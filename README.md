@@ -14,6 +14,8 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device’s screen size.
 - See all the recipe details presented in a clean and organized way.
 
+
+
 ---
 
 ## 🧩 Built With
@@ -27,7 +29,17 @@ Users should be able to:
 
 ## 💻 Demo
 
-🔗 **Live Site URL:** [https://recipe-page-main-frontendmentor.netlify.app/](https://recipe-page-main-frontendmentor.netlify.app/)  
-*(Replace with your actual live link)*
+🔗 **Live Site URL:** [https://profile-card-component-main-front-end.netlify.app/](https://profile-card-component-main-front-end.netlify.app/)
 
 ---
+
+## 📸 Preview
+
+![Recipe Page Preview](https://profile-card-component-main-front-end.netlify.app/preview.jpg)
+
+
+
+---
+
+
+
