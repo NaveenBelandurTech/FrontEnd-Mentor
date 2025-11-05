@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-body {
+    background-color: #d6e1f0;
+
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container_main {
+    width: 30%;
+    background-color: white;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.container_image_ {
+    width: 100%;
+    border-radius: 0.7rem;
+}
+
+.text_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.text_container_heading_fnt {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.text_container_heading_para_fnt {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #89929b;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        height: 0%;
+        padding: 4rem;
+    }
+
+    .container_main {
+        width: 100%;
+
+    }
+
+    .text_container_heading_fnt {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        text-align: center;
+    }
+}
