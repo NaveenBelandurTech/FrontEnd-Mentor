@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.body____ {
+    background-color: hsl(227, 75%, 14%);
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    align-content: start;
+    padding: 5rem;
+    gap: 4rem;
+}
+
+.img__ {
+    background-color: hsl(225, 23%, 24%);
+
+}
+
+.icons_container {
+    border: 1px solid red;
+}
+
+
+.second-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heading_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons_container_ {
+    border: 1px solid hsl(227, 75%, 14%);
+    ;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: hsl(227, 75%, 14%);
+    cursor: pointer;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.image__ {
+    opacity: 1;
+}
+
+.search_bar_container {
+    width: 100%;
+    background-color: hsl(225, 23%, 24%);
+    border: 1px solid hsl(225, 23%, 24%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.heading-para-fnt {
+    font-size: 1.8rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.icons-container {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.badge {
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: hsl(225, 23%, 24%);
+}
+
+
+.badge.active {
+    color: hsl(225, 23%, 24%);
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: red;
+}
+
+.extension-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+
+.box-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #2f364b;
+    background-color: hsl(225, 23%, 24%);
+}
+
+.box_inside__ {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.box_para__ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: bold;
+
+
+}
+
+#text-para-fnt {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-style: bold;
+    color: #9ea6bc;
+}
+
+.inside_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remove_badge {
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+
+
+
+}
+
+@media only screen and (max-width: 800px) {
+.container {
+   padding: 2rem;
+   gap:2rem;
+}
+
+.heading_container {
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ gap:1rem;
+}
+
+
+.extension-container {
+    grid-template-columns: auto;
+}
+
+}
